@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@import url(reset.css);
+@import url(common.css);
+
+
+.logo-wrapper{}
+.logo-wrapper img{
+  width: 150px;
+}
+
+
+/* 게시판 리스트관련 */
+
+.content-body{}
+.content-body ul.notice-list{
+  margin-top: 40px;
+  border-top: 1px solid #ddd;
+}
+.content-body ul.notice-list li.item{
+  display: flex;
+  padding: 40px 20px;
+  border-bottom: 1px solid #ddd;
+}
+.content-body ul.notice-list li.item .category{}
+.content-body ul.notice-list li.item .category.head{}
+.content-body ul.notice-list li.item .category span{
+  font-size: 20px;
+  color: #50B848;
+  font-weight: bold;
+}
+.content-body ul.notice-list li.item .body{
+  margin-left: 150px;
+}
+.content-body ul.notice-list li.item .body .title{}
+.content-body ul.notice-list li.item .body .title p{
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+.content-body ul.notice-list li.item .body .date{}
+.content-body ul.notice-list li.item .body .date span{
+  color: #666;
+}
+
