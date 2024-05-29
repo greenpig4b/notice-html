@@ -18,6 +18,7 @@
  header{
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 20px 0;
+  background: #fff;
  }
 /* NAV */
  nav{
@@ -214,4 +215,35 @@
   }
   .submit-box .search-btn i{}
   
-  
+  .btn{
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+
+  .main-color{
+    transition: 0.2s ease;
+    background: #50B848;
+    color: #fff;
+  }
+
+  .main-color:hover{
+    background: #3bd430;
+  }
+
+  .black-color{
+    transition: 0.2s ease;
+    background: #333;
+    color: #fff;
+  }
+  .black-color.join{
+    width: 100%;
+  }
+  .black-color:hover{
+    background: #444;
+  }

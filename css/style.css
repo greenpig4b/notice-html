@@ -141,10 +141,13 @@ ul.pagenation li.number span{
   object-fit: cover;
 }
 .join-wrapper {
-  width: 500px;
+  width: 550px;
   margin: 0 auto;
   margin-top: 100px;
   margin-bottom: 100px;
+  padding: 40px 20px;
+  position: relative;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .join-wrapper .step {
@@ -169,7 +172,7 @@ ul.pagenation li.number span{
 }
 
 .join-wrapper .step .step-number span.active {
-  background: #f45858;
+  background: #50B848;
   color: #fff;
 }
 
@@ -220,25 +223,13 @@ ul.pagenation li.number span{
   color: #666;
   font-size: 15px;
 }
-
+#sample6_postcode{
+  margin-bottom: 15px;
+}
+#sample6_detailAddress{
+  margin-bottom: 15px;
+}
 .join-form-wrapper .input-wrapper select option {
-}
-
-.join-form-wrapper .input-wrapper button {
-  border-radius: 5px;
-  border: none;
-  width: 90px;
-  background: rgb(244 88 88);
-  color: #fff;
-  height: 40px;
-  font-size: 12px;
-  font-weight: bold;
-  transition: all 0.4s ease;
-  cursor: pointer;
-}
-
-.join-form-wrapper .input-wrapper button:hover {
-  background: rgb(244 88 88);
 }
 
 .join-form-item {
@@ -299,6 +290,7 @@ ul.pagenation li.number span{
 .join-form-item .input-wrapper input {
   padding: 0 10px;
   border-radius: 5px;
+  font-size: 14px;
 }
 .input-wrapper {
   display: flex;
@@ -326,7 +318,7 @@ ul.pagenation li.number span{
 }
 
 .input-wrapper input:focus {
-  border-color: #f45858;
+  border-color: #50B848;
 }
 
 
@@ -334,6 +326,7 @@ ul.pagenation li.number span{
 
 section.join{
   position: relative;
+  min-height: 100vh;
 }
 
 section.join::before{
@@ -346,6 +339,7 @@ section.join::before{
     opacity: .2;
     left: -348px;
     top: -241px;
+    z-index: -1;
 }
 
 section.join::after{
@@ -358,4 +352,57 @@ section.join::after{
   opacity: .2;
   right: -240px;
   bottom: -200px;
+  z-index: -1;
+}
+
+/* 로그인 */
+.login-wrapper{
+  width: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 40px 20px;
+  border-radius: 5px;
+}
+.login-wrapper .content{}
+.login-wrapper .content .img-wrapper{
+  margin: 0 auto;
+  width: 200px;
+  margin-bottom: 10px;
+}
+.login-wrapper .content .img-wrapper img{
+  width: 100%;
+  object-fit: cover;
+}
+.login-wrapper .content span{
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 14px;
+  color: #999;
+}
+.login-wrapper .content .login-form-item{}
+.login-wrapper .content .login-form-item label{
+  display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+}
+.login-wrapper .content .login-form-item .input-wrapper{}
+.login-wrapper .content .login-form-item .input-wrapper input{
+  font-size: 14px;
+}
+.login-wrapper .content p{
+  margin-top: 40px;
+  text-align: center;
+}
+.login-wrapper .content p a{
+  transition: 0.2s ease;
+  color: #50B848;
+  padding-left: 10px;
+}
+.login-wrapper .content p a:hover{
+  color: #3bd430;
 }
