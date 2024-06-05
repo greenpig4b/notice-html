@@ -413,7 +413,7 @@ section.join::after{
   border: 1px solid #ddd;
   border-radius: 5px;
   height: 200px;
-  background-color: #3bd430;
+  background-color: #40873b;
   margin-top: 150px;
   position: relative;
   overflow: hidden;
@@ -460,17 +460,114 @@ section.join::after{
 }
 .notice-detail-wrapper .detail-icon-wrapper{
   border-top: 2px solid #44953e;
-    margin-top: 20px;
-    padding-top: 20px;
+  margin-top: 20px;
+  padding-top: 20px;
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
 }
-.notice-detail-wrapper .detail-icon-wrapper .icon-item{}
-.notice-detail-wrapper .detail-icon-wrapper i.icon{}
-.notice-detail-wrapper .detail-icon-wrapper span.icon-content{}
+.notice-detail-wrapper .detail-icon-wrapper .icon-item{
+  margin-right: 20px;
+}
+.notice-detail-wrapper .detail-icon-wrapper i.icon{
+  color: #666;
+  font-size: 14px;
+}
+.notice-detail-wrapper .detail-icon-wrapper span.icon-content{
+  color: #666;
+  font-size: 14px;
+}
 .notice-detail-wrapper .detail-icon-wrapper span.icon-content.date{}
 .notice-detail-wrapper .detail-icon-wrapper span.icon-content.eye{}
-.notice-detail-wrapper .content{}
-.notice-detail-wrapper .file-wrapper{}
-.notice-detail-wrapper .file-wrapper li{}
-.notice-detail-wrapper .file-wrapper li i.file-icon{}
-.notice-detail-wrapper .file-wrapper li .text{}
-.notice-detail-wrapper .file-wrapper li a.download{}
+.notice-detail-wrapper .content{
+  min-height: 500px;
+  border-bottom: 1px solid #ddd;
+}
+.notice-detail-wrapper .file-wrapper{
+  margin-bottom: 50px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+.notice-detail-wrapper .file-wrapper .file-list{
+  
+}
+.notice-detail-wrapper .file-wrapper .file-list li{
+  
+}
+
+.notice-detail-wrapper .file-wrapper .file-list li{
+
+}
+
+.notice-detail-wrapper .file-wrapper .file-list li a.download{
+  transition: 0.2s ease;
+  display: flex;
+  padding: 10px 0;
+  position: relative;
+  width: fit-content;
+  background: #f6f6f6;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.notice-detail-wrapper .file-wrapper .file-list li a.download:hover{
+  transform: translateY(-3px);
+}
+
+.notice-detail-wrapper .file-wrapper .file-list li a.download:before{
+  content: "";
+  width: 0;
+  height: 1px;
+  background: #ddd;
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+} 
+
+.notice-detail-wrapper .file-wrapper .file-list li a.download .text{
+  margin: 0 5px;
+
+}
+.notice-detail-wrapper .file-wrapper .file-list li a.download .body{}
+.notice-detail-wrapper .file-wrapper .file-list li a.download i.file-icon{
+
+}
+
+/* 리뷰 및 대댓글 */
+
+.review-wrapper{}
+.review-wrapper .review-head{}
+.review-wrapper .review-head .stars{}
+.review-wrapper .review-head .score{}
+.review-wrapper .review-head .count{}
+
+.review-wrapper .review-body{}
+.review-wrapper .review-body .review-list{}
+.review-wrapper .review-body .review-list .item{}
+.review-wrapper .review-body .review-list .item .owner{}
+.review-wrapper .review-body .review-list .item .owner .info{}
+.review-wrapper .review-body .review-list .item .owner .info .name{}
+.review-wrapper .review-body .review-list .item .owner .info .owner-icon{}
+.review-wrapper .review-body .review-list .item .owner .info .body{}
+.review-wrapper .review-body .review-list .item .owner .more{}
+.review-wrapper .review-body .review-list .item .owner .more .like{}
+.review-wrapper .review-body .review-list .item .owner .more .report{}
+.review-wrapper .review-body .review-list .item .owner .more .reply-btn{}
+
+.review-wrapper .review-body .review-list .item .reply .info{}
+.review-wrapper .review-body .review-list .item .reply .info .name{}
+.review-wrapper .review-body .review-list .item .reply .info .owner-icon{}
+.review-wrapper .review-body .review-list .item .reply .info .body{}
+.review-wrapper .review-body .review-list .item .reply .more{}
+.review-wrapper .review-body .review-list .item .reply .more .like{}
+.review-wrapper .review-body .review-list .item .reply .more .report{}
+.review-wrapper .review-body .review-list .item .reply .more .reply-btn{}
+
+.review-wrapper .review-body .review-list .item .info{}
+.review-wrapper .review-body .review-list .item .info .name{}
+.review-wrapper .review-body .review-list .item .info .owner-icon{}
+.review-wrapper .review-body .review-list .item .info .body{}
+.review-wrapper .review-body .review-list .item .more{}
+.review-wrapper .review-body .review-list .item .more .like{}
+.review-wrapper .review-body .review-list .item .more .report{}
+.review-wrapper .review-body .review-list .item .more .reply-btn{}

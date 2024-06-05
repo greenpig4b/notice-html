@@ -244,6 +244,23 @@
   .black-color.join{
     width: 100%;
   }
+  .black-color.full{
+    width: 100%;
+  }
   .black-color:hover{
     background: #444;
   }
+  .back-btn-wrapper{
+    width: 200px;
+  }
+  .back-btn-wrapper a{
+    border-radius: 5px;
+  }
+
+/* h3 정리 */
+h3.title{
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
